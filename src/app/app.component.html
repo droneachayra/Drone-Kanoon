@@ -1,0 +1,42 @@
+<header>
+  <nav>
+    <div class="site-title">
+      <a routerLink="/">
+        <h1>Drone Kanoon</h1>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<div class="home-user content">
+  <form [formGroup]="signupFrom">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" class="form-control" formControlName="name" required>
+
+    <label for="email">Email Id</label>
+    <input type="email" id="email" name="email" class="form-control" formControlName="email" required>
+
+    <label for="phone">Phone No.</label>
+    <input type="tel" id="phone" name="phone" class="form-control" formControlName="phone" required>
+
+    <label for="service">Service Type</label>
+    <select id="service" name="service"class="form-control" formControlName="service" required>
+      <option value="">--Select a service type--</option>
+      <option value="service-1">Service-1</option>
+      <option value="service-2">Service-2</option>
+      <option value="service-3">Service-3</option>
+    </select>
+
+    <br>
+
+    <button type="submit" (click)="submitForm()">Submit</button>
+    <br><br>
+  </form>
+</div>
+
+
+<footer>
+  <div class="footer">
+    Copyright &copy; Drone Kanoon, 2022- All Rights Reserved.
+  </div>
+</footer>
