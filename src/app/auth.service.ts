@@ -9,6 +9,6 @@ export class AuthService {
 
      signup(data:any):Observable<any>{
       console.log(data);
-      return this.http.post('http://localhost:8080/auth/register',data)
+      return this.http.post('https://dronekanoon-backend.onrender.com/auth/register',data)
      }
     }

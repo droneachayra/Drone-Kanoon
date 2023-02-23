@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://utkrisht:123@cluster0.poczyyq.mongodb.net/db?ret
     if(err){
         console.log(err);
     }else{
-        console.log("databse is connected...")
+        console.log("Database is connected")
     }
 }); 
 mongoose.set('strictQuery', true);
