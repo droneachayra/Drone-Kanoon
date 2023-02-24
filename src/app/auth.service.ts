@@ -11,4 +11,4 @@ export class AuthService {
       console.log(data);
       return this.http.post('https://dronekanoon-backend.onrender.com/auth/register',data)
      }
-    }
+    } 
